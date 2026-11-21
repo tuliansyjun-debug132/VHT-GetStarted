@@ -1,0 +1,11 @@
+name: c211-i122668-scopeprobe
+on:
+  workflow_dispatch:
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo SCOPE_PROBE_OK
